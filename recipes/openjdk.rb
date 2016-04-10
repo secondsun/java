@@ -45,6 +45,7 @@ if node['platform'] == 'ubuntu'
   apt_repository 'openjdk-r-ppa' do
     uri 'http://ppa.launchpad.net/openjdk-r/ppa/ubuntu/'
     distribution node['lsb']['codename']
+    components ["main"]
   end
 end
 
