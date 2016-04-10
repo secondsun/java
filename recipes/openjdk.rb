@@ -43,7 +43,7 @@ end
 if node['platform'] == 'ubuntu'
   include_recipe 'apt'
   apt_repository 'openjdk-r-ppa' do
-    uri 'ppa:openjdk-r'
+    uri 'http://ppa.launchpad.net/openjdk-r/ppa/ubuntu/'
     distribution node['lsb']['codename']
   end
 end
